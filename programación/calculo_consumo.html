@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script> 
+ 
+var litros_tanque = 40;
+var recorrido_tanque =  480;
+
+var eficiencia  =  calcularEficiencia (recorrido_tanque , litros_tanque)
+
+document.write("La eficiencia es : " + eficiencia  + " km/h "  ) ;
+document.write("<br>");
+
+var alcohol_tanque =  40;
+var recorrido = 300;
+ 
+var eficiencia = recorrido / alcohol_tanque
+
+document.write("La eficiencia del carro usando alcohol es : " + eficiencia  + " km/h "  ) ;
+document.write("<br>");
+
+
+
+function calcularEficiencia(recorrido, tanque) { 
+    return recorrido / tanque 
+}
+
+</script> 
